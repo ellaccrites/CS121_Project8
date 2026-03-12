@@ -46,6 +46,26 @@ make class called Guesser:
                 print "You got it right! Well done."
                 keepGoing = 0;
     
+    public void computerGuesser():
+        print "Think of a number from 1-100"
+        print "Computer guesses 50"
+        int guess = 50
+        print "Enter H for too high, L for too low or C for correct"
+        
+        int keepGoing = 1
+        while keepGoing = 1
+            take user input put in string called status
+            convert status to lowercase
 
-        
-        
+            if status = 'l':
+                guess * 1.5 = floatGuess
+                guess = cast floatGuess to int
+                print "Computer guesses" guess
+            else if status = 'h'::
+                guess * 0.5 = floatGuess
+                guess = cast floatGuess to int
+                print "Computer guesses" guess
+            else if status = 'c'
+                print "Computer guessed the number!"
+                keepGoing = 0
+                

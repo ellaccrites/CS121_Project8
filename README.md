@@ -19,15 +19,13 @@ make class called Guesser:
             else if userInput = 2:
                 call computerGuesser()
             
-    public integer menu():
+    public string  menu():
         print "0) Exit"
         print "1) Guess the number"
         print "2) have the computer guess your number"
 
         take input into string userInput
-        make userInput a integer called  userInt
-
-        return userInt
+        return userInput
 
     public void humanGuesser();
         generate random number 1-100 and put in integer called number

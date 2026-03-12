@@ -3,11 +3,23 @@
 ## Algorithm
 ```
 import java.util.*
+
 make class called Guesser:
     main():
         the menu, the main loop, the human guesser, and the computer guesser
         call new Guesser()
-        
+
+    Guesser():
+        boolean keepGoing = true
+        while keepGoing is true:
+            string userChoice = menu()
+            if userChoice =0:
+                keepGoiing = false
+            else if userChoice = 1:
+                call humanGuesser()
+            else if userCHoice = 2:
+                call computer guesser
+
     public Guesser():
         integer keepGoing = 1
         while keepGoing = 1:

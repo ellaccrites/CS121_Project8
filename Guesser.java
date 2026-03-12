@@ -2,8 +2,22 @@ import java.util.*;
 
 public class Guesser {
 	public static void main(String[] args) {
-		Guesser g = new Guesser();
+		new Guesser();
 	}// end main
+	
+	public Guesser(){
+		boolean keepGoing = true;
+		while(keepGoing){
+			String userChoice = this.menu();
+			if(userChoice.equals("0")){
+				keepGoing = false;
+			} else if(userChoice.equals("1")){
+				this.humanGuesser();
+			} else if (userChoice.equals("2")){
+				this.computerGuesser();
+			}// end if
+		}// end while
+	}// end constructor
 	
 	public String menu(){
 		System.out.println("0) Exit");
@@ -15,7 +29,7 @@ public class Guesser {
 		String userChoice = input.nextLine();
 		
 		return userChoice;
-	}// end constructor
+	}// end menu
 	
 	public void humanGuesser(){
 		Random r = new Random();
@@ -45,11 +59,11 @@ public class Guesser {
 				keepGoing = 0;
 			}// end else if
 		}// end while
-	}// end constructor
+	}// end humanGuesser
 	
 	public void computerGuesser(){
-	
-	}// end constructor
+		System.out.println("Computer guesser is blank.");
+	}// end computerGuesser
 }// end class def
 
 
